@@ -45,7 +45,7 @@ spec:
       - env:
         - name: JAVA_TOOL_OPTIONS
           value: -Dmanagement.endpoint.health.probes.add-additional-paths="true" -Dmanagement.health.probes.enabled="true" -Dserver.port="8080" -Dserver.shutdown.grace-period="24s"
-        image: private-harbor.tanzu.lab/tap/supply-chain/tanzu-java-web-app-default@sha256:69f647165b6d370e2e2b3aefee89927cc5ff87e29497470e66f07c323086069f
+        image: private-harbor.tanzu.lab/tap/supply-chain/tanzu-java-web-app-default@sha256:3f0a8e43903e7ef68d16613d44f9a245196f5d2c93d491121130e08efc5c156a
         livenessProbe:
           httpGet:
             path: /livez
